@@ -23,6 +23,7 @@ first_fifty_GAMS <- function(max_array = 2, max_tot_cap = 1.5, trk_type = 'singl
 		sys_command <- paste('gams', gms_file_name, 'lo = 2', 'threads = 0','reslim = 86400', 'optcr =', '0.1', sep = ' ')
 		
 		## Run the above in the System -- not in R (get around using the gdxrrw package here)
+		## Extra comment
 		system(sys_command)
 		
 		
